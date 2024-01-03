@@ -14,6 +14,7 @@ def db_session():
     yield session
     session.close()
 
+
 def test_create_student_success(db_session):
     # Test the successful creation of a student
     new_student = Student(
